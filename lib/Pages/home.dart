@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     print('rebuild');
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(title: Text('Todo app',textScaleFactor:2),
       body: ListView.builder(
         itemCount: _todo.length,
         itemBuilder: (context, index) => ListTile(
